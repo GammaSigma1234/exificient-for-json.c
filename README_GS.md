@@ -68,3 +68,8 @@ However, the actual content of `EXI_sample_2.exi` (which is the EXI version of `
 Apart from the first byte, the two representations are completely different, which demonstrates that `encodeEXIforJSON` creates a data buffer containing data which are not comparable to the original EXI file.
 
 The conversion to JSON string does not fail, but it gives an incorrect result. Maybe this is because the EXI file is read as raw bytes instead of using the `readBytesFromFile` from OpenV2G, which creates an `uint8_t` buffer? Or maybe because Exificient For JSON is not intended to convert from an actual EXI file?
+
+
+## `readBytesFromFile` Unsuccessful Attempt
+
+Function `readBytesFromFile` did not solve the problem (see above). It just reads raw bytes from a file, therefore it does nothing different from the usual `fread()`. Maybe Exificient For JSON is simply not intended to convert from an actual EXI file.
