@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
   int errn = 0;
 
   // char *JSON_STRING_IN = "{\"keyNumber\":           123, \"keyArrayStrings\":  [     \"s1\",    \"s2\"   ]       }"; // (GS) Irregular number of spaces just to test whether they are correctly ignored by the encoder
-  char *JSON_STRING_IN = // Copy-pasted and adapted from `EXI_sample_2.json`
+  const char *const JSON_STRING_IN = // (GS) Copy-pasted and adapted from `EXI_sample_2.json`
   "{"
   "    \"V2G_Message\": {"
   "        \"Header\": {"
@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
   if( errn == 0 )
   {
     /* OK so far */
-    printf("Encoding JSON (len=%d) to EXIforJSON (len=%d) was successful \n", strlen(JSON_STRING_IN), posEncode);
+    printf("Encoding JSON (len=%lu) to EXIforJSON (len=%lu) was successful \n", strlen(JSON_STRING_IN), posEncode);
 
     // (GS) print raw bytes to terminal
 
@@ -81,7 +81,7 @@ int main(int argc, char *argv[])
     if( errn == 0 )
     {
       /* OK */
-      printf("Decoding EXIforJSON (len=%d) to JSON (len=%d) was successful \n", posEncode, strlen(JSON_STRING_OUT));
+      printf("Decoding EXIforJSON (len=%lu) to JSON (len=%lu) was successful \n", posEncode, strlen(JSON_STRING_OUT));
       printf("TO: \n%s \n", JSON_STRING_OUT);
     } else
     {
