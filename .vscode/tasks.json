@@ -1,0 +1,95 @@
+{
+  "tasks":
+  [
+    {
+      "type": "shell",
+      "label": "CMake: configure (Debug)",
+      "command": "./scripts/cmake_config_deb.sh",
+      "args": [],
+      "options":
+      {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [ "$gcc" ],
+      "group":
+      {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "CMake: configure (Debug)"
+    },
+
+    {
+      "type": "shell",
+      "label": "CMake: configure (Release)",
+      "command": "./scripts/cmake_config_rel.sh",
+      "args": [],
+      "options":
+      {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [ "$gcc" ],
+      "group":
+      {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "CMake: configure (Release)"
+    },
+
+    {
+      "type": "shell",
+      "label": "CMake: build (Debug)",
+      "command": "./scripts/cmake_build_deb.sh",
+      "args": [],
+      "options":
+      {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [ "$gcc" ],
+      "group":
+      {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "CMake: build (Debug)"
+    },
+
+    {
+      "type": "shell",
+      "label": "CMake: build (Release)",
+      "command": "./scripts/cmake_build_rel.sh",
+      "args": [],
+      "options":
+      {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [ "$gcc" ],
+      "group":
+      {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "CMake: build (Release)"
+    },
+
+    {
+      "type": "shell",
+      "label": "Remove build directory",
+      "command": "rm",
+      "args": ["-rf", "./build"],
+      "options":
+      {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [ "$gcc" ],
+      "group":
+      {
+        "kind": "none",
+        "isDefault": true
+      },
+      "detail": "Remove build directory"
+    }
+  ],
+  "version": "2.0.0"
+}

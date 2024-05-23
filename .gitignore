@@ -32,3 +32,6 @@
 *.dSYM/
 /Debug
 /Release
+
+# CMake
+build
