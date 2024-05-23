@@ -12,7 +12,7 @@ This example is an adaptation from the [Demo Program](https://github.com/GammaSi
 - The buffer is then encoded / serialised back to a JSON string.
 - The JSON string is printed to the terminal. Apart from the whitespace characters, the contents are the same as the original string literal.
 
-# `test_GS/main.c`
+# `test_GS/test.c`
 
 This test is inspired from the previous one, with a difference: we do not want to provide a string literal to the CoDec, but an already existing EXI file instead. We want the EXI to be converted into a serialised JSON string.
 
