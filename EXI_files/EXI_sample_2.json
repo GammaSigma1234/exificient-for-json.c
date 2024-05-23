@@ -1,0 +1,27 @@
+{
+    "V2G_Message": {
+        "Header": {
+            "SessionID": "D481F3E6AF8B227A",
+            "Notification": {
+                "FaultCode": "ParsingError",
+                "FaultMsg": "WeldingDetectionReq' not accepted in state <iso15118.secc.stat.."
+            }
+        },
+        "Body": {
+            "WeldingDetectionRes": {
+                "ResponseCode": "FAILED_SequenceError",
+                "DC_EVSEStatus": {
+                    "NotificationMaxDelay": 0,
+                    "EVSENotification": "None",
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSEStatusCode": "EVSE_Ready"
+                },
+                "EVSEPresentVoltage": {
+                    "Value": 230,
+                    "Multiplier": 0,
+                    "Unit": "V"
+                }
+            }
+        }
+    }
+}

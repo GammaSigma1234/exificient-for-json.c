@@ -1,0 +1,49 @@
+{
+    "V2G_Message": {
+        "Header": {
+            "SessionID": "D481F3E6AF8B227A"
+        },
+        "Body": {
+            "CurrentDemandRes": {
+                "ResponseCode": "OK",
+                "DC_EVSEStatus": {
+                    "NotificationMaxDelay": 0,
+                    "EVSENotification": "StopCharging",
+                    "EVSEIsolationStatus": "Fault",
+                    "EVSEStatusCode": "EVSE_Malfunction"
+                },
+                "EVSEPresentVoltage": {
+                    "Value": 354,
+                    "Multiplier": 0,
+                    "Unit": "V"
+                },
+                "EVSEPresentCurrent": {
+                    "Value": 0,
+                    "Multiplier": -1,
+                    "Unit": "A"
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEVoltageLimitAchieved": false,
+                "EVSEPowerLimitAchieved": false,
+                "EVSEMaximumVoltageLimit": {
+                    "Value": 357,
+                    "Multiplier": 0,
+                    "Unit": "V"
+                },
+                "EVSEMaximumCurrentLimit": {
+                    "Value": 21,
+                    "Multiplier": 0,
+                    "Unit": "A"
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Value": 7,
+                    "Multiplier": 3,
+                    "Unit": "W"
+                },
+                "EVSEID": "NEX2_00007",
+                "SAScheduleTupleID": 1,
+                "ReceiptRequired": false
+            }
+        }
+    }
+}
